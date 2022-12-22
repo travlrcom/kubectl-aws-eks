@@ -7,4 +7,4 @@ inputs:
     description: the docker image name
 runs:
   using: "docker"
-  image: 269461048441.dkr.ecr.ap-southeast-2.amazonaws.com/kubectl-aws-eks:1.0.0
+  image: docker://269461048441.dkr.ecr.ap-southeast-2.amazonaws.com/kubectl-aws-eks:1.0.0

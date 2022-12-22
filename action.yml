@@ -1,6 +1,10 @@
 name: kubectl-aws-eks
 description: "This action provides kubectl for Github Actions."
-author: 'Maksim Karpychev'
+author: "Maksim Karpychev"
+inputs:
+  image_name:
+    required: true
+    description: the docker image name
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "${{ inputs.image_name }}"
